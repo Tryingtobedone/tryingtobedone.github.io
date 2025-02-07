@@ -1,0 +1,22 @@
+body {
+display: flex;
+flex-direction: column;
+
+}
+
+header{
+display:inherit;
+flex-direction: row;
+justify-content: space-between;
+height: 5%;
+}
+
+#head_sigma{
+display: inherit;
+flex-direction: row;
+justify-content: space-evenly;
+width: 50%;
+}
+p {
+    margin: 0;
+}
