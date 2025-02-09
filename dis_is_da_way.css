@@ -1,7 +1,8 @@
 #head_sigma{
     display: inherit;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: right;
+    gap: 1.5em;
     width: 60%;
     }
 #picture{
@@ -9,8 +10,17 @@
     flex-direction: row;
 }
 #edu {
-    flex-wrap: wrap;
+    display: inherit;
+    flex-direction: column;
     border-right: 0;
+    div {
+        height: 10%;
+        margin-left: 0.5em;
+        margin-top: 0.3em;
+    }
+    #desc {
+        height: 20%;
+    }
 }
 .title{
     display: inherit;
@@ -25,23 +35,73 @@
     display: inherit;
     height: 20rem;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     & .project {
-        p {
+        display: inherit;
+        flex-direction: column;
+        & div {
+            height: 20%;
             border-top: thin solid black;
-            margin-top: 20%;
+            & h3 {
+                margin-left: 0.5em;
+                margin-top: 0.3em;
+            }
+            & p {
+                margin-left: 0.5em;
+                margin-top: 0.3em;
+            }
+        }
+        .div-title {
+            border: 0;
         }
     }
+    border-bottom: thin solid black;
 }
 .col_item {
-    width: 33%;
-    border-right: thin solid black;
-    border-bottom: thin solid black;
+    width: 33.33%;
     height: 100%;
 }
-.middle_item {
+.middle_item1, .middle_item2{
+    display: inherit;
+    flex-direction: column;
     height: 50%;
+    border-left: thin solid black;
+    border-right: thin solid black;
+    & h3, p, a{
+        margin-left: 0.5em;
+        margin-top: 0.3em;
+    }
+}
+.middle_item1{
     border-bottom: thin solid black;
+    & div {
+        height: 20%;
+    }
+}
+.col_3{
+    height: 15rem;
+    flex-direction: column;
+}
+.col-3-up{
+    height: 10%;
+    & h3 {
+        margin-left: 0.5em;
+        margin-top: 0.3em;        
+    }
+}
+.col-3-down{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    height: 90%;
+    & div {
+        height: 75%;
+        width: 17%;
+        border: thin solid black;
+        border-radius: 10%;
+    }
 }
 #middle_col_2 {
     display: inherit;
@@ -52,6 +112,7 @@ body {
 display: flex;
 flex-direction: column;
 border: thin solid black;
+margin: 1;
 
 }
 header{
@@ -68,5 +129,10 @@ h1 {
     margin-bottom: 0;
 }
 footer{
+    display: inherit;
     height: 10rem;
+    justify-content: center;
+}
+h3 {
+    margin: 0;
 }
