@@ -8,18 +8,25 @@
 #picture{
     display: inherit;
     flex-direction: row;
+    width: 40%;
+    gap: 1em;
+    & img {
+        height: 4em;
+        width: 3em;
+        border: thin solid black;
+    }
 }
 #edu {
     display: inherit;
     flex-direction: column;
     border-right: 0;
     div {
-        height: 10%;
+        height: 8%;
         margin-left: 0.5em;
         margin-top: 0.3em;
     }
     #desc {
-        height: 20%;
+        height: 12%;
     }
 }
 .title{
@@ -40,7 +47,7 @@
         display: inherit;
         flex-direction: column;
         & div {
-            height: 20%;
+            height: 15%;
             border-top: thin solid black;
             & h3 {
                 margin-left: 0.5em;
@@ -50,8 +57,14 @@
                 margin-left: 0.5em;
                 margin-top: 0.3em;
             }
+            & a{
+                margin-left: 1em;
+                margin-top: 0.2em;
+                font-size: 0.8em;
+            }
         }
         .div-title {
+            height: 10%;
             border: 0;
         }
     }
@@ -67,7 +80,7 @@
     height: 50%;
     border-left: thin solid black;
     border-right: thin solid black;
-    & h3, p, a{
+    & h3, p, a, h4, h2{
         margin-left: 0.5em;
         margin-top: 0.3em;
     }
@@ -133,6 +146,10 @@ footer{
     height: 10rem;
     justify-content: center;
 }
-h3 {
+h3, h2, h4{
     margin: 0;
+}
+a {
+    text-decoration: none;
+    color:deepskyblue;
 }
